@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply font-[Verdana]
+    }
+    li{
+        /* padding x-axis */
+        @apply px-4;
+        @apply cursor-pointer
+
+    }
+}
+
+html,body{
+    font-size: 1.5vw;
+    overflow-x: hidden;
+}
+
+.content-div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.content-div:hover{
+    background-image: linear-gradient(
+        to right,
+        rgba(168,85,247,0.8),
+        hsla(242,74%,61%,0.8)
+    )!important;
+}
+
+.link1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+.link1:hover{
+    border-radius: 20px;
+    background-color: rgb(124 58 237);
+}
+
+.head1{
+    font-family: 'Gill Sans'
+}
+
+.animate{
+    transition: width 2s, border 0s,height 2s;
+}
+
+.animate:hover{
+    width: 95%;
+    height: 600px;
+    border: 10px solid rgb(124 58 237);
+}
