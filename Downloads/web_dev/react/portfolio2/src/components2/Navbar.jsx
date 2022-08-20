@@ -12,8 +12,8 @@ export default function Navbar() {
   };
 
   return (
-    <div className="fixed w-full lg:h-[80px] h-[50px] flex justify-between items-center px-4 bg-violet-800 text-white">
-      <div className="text-4xl">LAS</div>
+    <div className="navbar fixed w-full lg:h-[60px] h-[40px] flex justify-between items-center px-4 text-white">
+      <a href="/"><div className="las text-4xl">LAS*</div></a>
       {/*menu*/}
       <div>
         <ul className="hidden md:flex text-2xl">
@@ -40,7 +40,7 @@ export default function Navbar() {
       <div
         onClick={handleClick}
         className={
-          "absolute right-10 md:hidden z-10 text-3xl p-5 hover:bg-violet-600"
+          "hamb absolute right-10 md:hidden z-10 text-3xl p-5"
         }
       >
         {!nav ? <FaBars /> : <FaTimes />}

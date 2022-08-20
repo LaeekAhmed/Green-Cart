@@ -9,10 +9,8 @@ export default function Work() {
   let [itr, setItr] = useState(Number(0)); // iterator for list of project links (items)
   const chng_link = () => {
     let items = [
-      "https://cs1xd3.online/ShowModulePublish?modulePublishId=0e98300a-ec67-4d9c-80d1-1c38973a2683",
-      "https://cs1xd3.online/ShowModulePublish?modulePublishId=89ccba37-9e4d-445b-b0fa-59beaa18b25a",
-      "https://cs1xd3.online/ShowModulePublish?modulePublishId=8a5076e8-edea-422d-991b-f8a2044161e7",
-    ];
+      "https://nodeproject11.herokuapp.com/"
+      ,"https://cs1xd3.online/ShowModulePublish?modulePublishId=8a5076e8-edea-422d-991b-f8a2044161e7"];
     let newItr = itr;
     if (newItr == items.length) newItr = 0;
     let newLink = link;
@@ -20,29 +18,61 @@ export default function Work() {
     newItr++;
     setLink(newLink);
     setItr(newItr);
-    // console.log(itr, link);
+    //console.log(itr, link);
   };
 
   return (
-    <div name="projects" className="w-full text-white bg-[#1d023f] pt-12">
-      <div className="mx-auto px-8 flex flex-col justify-center w-full h-full">
-        <div className="pb-8">
-          <h1 className="text-5xl font-bold py-3 head1">Projects;</h1>
-        </div>
+    <div name="projects" className="w-full text-white pt-12">
+      <h1 className="text-5xl font-bold p-8 head1">Projects;</h1>
+      <div className="mx-auto px-8 flex flex-col flex-wrap justify-center w-10/12 h-full">
+        <div className="pb-8"></div>
         {/* Main block */}
-        <div className="grid sm:grid-cols-1  md:grid-cols-2 gap-4">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
           {/* item-1*/}
           <div
             style={{ backgroundImage: `url(${vector_calc})` }}
             className="p-5 shadow-lg shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div"
           >
             {/*Hover Effects*/}
-            <div className="opacity-0 group-hover:opacity-100 text-2xl">
-              <span className="text-2xl font-bold text-white tracking-wider">
+            <div className="opacity-0 group-hover:opacity-100 text-lg p-1">
+              <span className="text-lg font-bold text-white tracking-wider">
+                Note-Spot
+              </span>
+              <div>
+              Note sharing Web-App which allows users to share, download and upload notes (pdfs, docs,
+              images etc) from a pool. Somewhat similar to youtube but has notes instead of videos.
+
+                <br />
+                <a
+                  href="https://nodeproject11.herokuapp.com/"
+                  target="blank"
+                >
+                  <button className="text-center rounded-lg px-4 m-2 bg-white text-black font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://github.com/LaeekAhmed/NoteSpot" target="blank">
+                  <button className="text-center rounded-lg px-4 m-2 bg-white text-black font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+              Live demo below! ⬇️
+            </div>
+          </div>
+          {/* item-2*/}
+          <div
+            style={{ backgroundImage: `url(${vector_calc})` }}
+            className="p-5 shadow-lg shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div"
+          >
+            {/*Hover Effects*/}
+            <div className="opacity-0 group-hover:opacity-100 text-lg p-1">
+              <span className="text-lg font-bold text-white tracking-wider">
                 Vector Calculator
               </span>
               <div>
-                made with elm, helps in visualizing vector operations.
+              calculator built to perform operations like addition, subtraction, scaling, transformations, and
+              magnitude calculation on Vectors with graphical visualization.
                 <br />
                 <a
                   href="https://cs1xd3.online/ShowModulePublish?modulePublishId=8a5076e8-edea-422d-991b-f8a2044161e7"
@@ -52,7 +82,7 @@ export default function Work() {
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a href="https://cs1xd3.online/ShowModulePublish?modulePublishId=c9e5f087-eddf-4e3d-b1e0-7ef9ea97fba4 " target="blank">
                   <button className="text-center rounded-lg px-4 m-2 bg-white text-black font-bold text-lg">
                     Code
                   </button>
@@ -61,19 +91,47 @@ export default function Work() {
               Live demo below! ⬇️
             </div>
           </div>
-          {/* item-2 */}
+          {/* item-3*/}
+          <div
+            style={{ backgroundImage: `url(${vector_calc})` }}
+            className="p-5 shadow-lg shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div"
+          >
+            {/*Hover Effects*/}
+            <div className="opacity-0 group-hover:opacity-100 text-lg p-1">
+              <span className="text-lg font-bold text-white tracking-wider">
+                Personal Portfolio (this webpage)
+              </span>
+              <div>
+                built using react, this website exhibits all technologies I’ve worked with and projects I’ve worked on
+                <br />
+                <a
+                  href="https://laeekahmed.github.io/Portfolio-React/"
+                  target="blank"
+                >
+                  <button className="text-center rounded-lg px-4 m-2 bg-white text-black font-bold text-lg">
+                    Demo
+                  </button>
+                </a>
+                <a href="https://github.com/LaeekAhmed/Portfolio-React" target="blank">
+                  <button className="text-center rounded-lg px-4 m-2 bg-white text-black font-bold text-lg">
+                    Code
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* item-4 */}
           <div
             style={{ backgroundImage: `url(${hospital})` }}
             className="p-5 shadow-lg shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div"
           >
             {/*Hover Effects*/}
-            <div className="opacity-0 group-hover:opacity-100 text-2xl">
-              <span className="text-2xl font-bold text-white tracking-wider">
+            <div className="opacity-0 group-hover:opacity-100 text-lg p-1">
+              <span className="text-lg font-bold text-white tracking-wider">
                 DB management System
               </span>
               <div>
-                Made with tkinter-python and sqlite, Stores and performs
-                operations on data used by a hosptial
+              Data-base management system for a hospital with various features to maintain records of patients and employees and perfrom various features on it.
                 <br />
                 <a href="/">
                   <button className="text-center rounded-lg px-4 m-2 bg-white text-black font-bold text-lg">
@@ -93,22 +151,21 @@ export default function Work() {
           </div>
         </div>
       </div>
-      {/* item-3 */}
       <div className="">
         <iframe
-          className="animate m-5 rounded-2xl mx-auto"
+          className="animate m-5 mt-10 rounded-2xl mx-auto"
           id="proj"
           src={link}
           frameBorder={0}
           width="85%"
-          height={500}
+          height={600}
         />
         {/* padding gives dist b/w border and text */}
         <button
           onClick={chng_link}
           className="bg-violet-800 p-5 text-3xl rounded-3xl flex mx-auto link1"
         >
-          More ➡️
+          Next ➡️
         </button>
       </div>
     </div>
