@@ -2,18 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    body{
-        @apply font-[Verdana]
-    }
-    li{
-        /* padding x-axis */
-        @apply px-4;
-        @apply cursor-pointer
-
-    }
-}
-
 html,body{
     font-size: 1vw;
     overflow-x: hidden;
@@ -23,6 +11,29 @@ html,body{
 .navbar{
     border-bottom: solid white 2px;
     background: linear-gradient(to right,#5a00c8,#9d00ff) !important;
+}
+
+.navList li{
+    margin-right: 4rem;
+    padding: 0% 2rem;
+    cursor: pointer;
+}
+
+.link1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+}
+
+.link1:hover{
+    border-radius: 20px;
+    background-color: rgb(135, 80, 229) !important;
+}
+
+.hamb:hover{
+    opacity: 60%;
+}
+
+.socials li{
+    padding: 0% 1rem; 
 }
 
 .las{
@@ -48,7 +59,7 @@ html,body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 250px;
+    height: 300px;
 }
 
 .content-div:hover{
@@ -59,21 +70,8 @@ html,body{
     )!important;
 }
 
-.link1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
-}
-
-.link1:hover{
-    border-radius: 20px;
-    background-color: rgb(124 58 237);
-}
-
-.hamb:hover{
-    opacity: 60%;
-}
-
 .head1{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .animate{

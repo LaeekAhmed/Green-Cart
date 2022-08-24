@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import WorkImg from "../assets/workImg.jpeg";
-import vector_calc from "../assets/vector_calc.png";
+import portfolio from "../assets/portfolio.png";
 import hospital from "../assets/hospital.jpg";
+import vector from "../assets/vector.png";
+import notes from "../assets/Notes.png";
+
 export default function Work() {
   let [link, setLink] = useState(
     "https://cs1xd3.online/ShowModulePublish?modulePublishId=8a5076e8-edea-422d-991b-f8a2044161e7"
@@ -30,7 +32,7 @@ export default function Work() {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4">
           {/* item-1*/}
           <div
-            style={{ backgroundImage: `url(${vector_calc})` }}
+            style={{ backgroundImage: `url(${notes})` }}
             className="p-5 shadow-lg shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div"
           >
             {/*Hover Effects*/}
@@ -62,7 +64,7 @@ export default function Work() {
           </div>
           {/* item-2*/}
           <div
-            style={{ backgroundImage: `url(${vector_calc})` }}
+            style={{ backgroundImage: `url(${vector})` }}
             className="p-5 shadow-lg shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div"
           >
             {/*Hover Effects*/}
@@ -93,7 +95,7 @@ export default function Work() {
           </div>
           {/* item-3*/}
           <div
-            style={{ backgroundImage: `url(${vector_calc})` }}
+            style={{ backgroundImage: `url(${portfolio})` }}
             className="p-5 shadow-lg shadow-[#040c16] group container rounded-xl flex justify-center items-center mx-auto content-div"
           >
             {/*Hover Effects*/}

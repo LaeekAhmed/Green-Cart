@@ -16,7 +16,7 @@ export default function Navbar() {
       <a href="/"><div className="las text-4xl">LAS*</div></a>
       {/*menu*/}
       <div>
-        <ul className="hidden md:flex text-2xl">
+        <ul className="navList hidden md:flex text-2xl">
           <li className="hover:bg-violet-600 rounded-lg bg-auto link1">
             <Link to="home" smooth={true} duration={500}>
               Home
@@ -77,7 +77,7 @@ export default function Navbar() {
       </ul>
       {/*Social icons*/}
       <div>
-        <ul className="hidden md:flex text-3xl">
+        <ul className="socials hidden md:flex text-3xl">
           <li>
             <a
               href="https://github.com/LaeekAhmed"
