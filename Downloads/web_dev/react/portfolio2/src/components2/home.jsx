@@ -14,7 +14,7 @@ const Home = () => {
         <p className="text-4xl">👋 Hi, my name is</p>
         <h1 className="las text-6xl font-bold py-3">Laeek Ahmed Shaikh</h1>
         <h2 className="text-4xl text-purple-400">
-          CS-Student, Developer, Programmer ?
+          CS-Student, Software & webdeveloper Developer 🧑‍💻
         </h2>
       </div>
     </div>

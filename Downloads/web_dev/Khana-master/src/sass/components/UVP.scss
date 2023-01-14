@@ -1,0 +1,38 @@
+.flexIt {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom {
+  text-align: center;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  span {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 600;
+    color: gray;
+    padding-top: 1rem;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+  }
+}
+
+#container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50vw;
+  height: 36vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  @media (max-width: $breakpoint-phone) {
+    height: 60vh;
+  }
+
+  // max-width: 600px;
+  padding: 0;
+  margin-left: 0;
+  min-width: -webkit-fill-available;
+}

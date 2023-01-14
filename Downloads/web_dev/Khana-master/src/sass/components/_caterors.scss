@@ -1,0 +1,64 @@
+.caterors {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  .grid {
+    // max-width: 200px;
+    // height: fit-content;
+    width: -webkit-fill-available;
+    border-bottom: 2px solid $grey;
+    padding: 10px;
+    background: url("../../images/grid.svg");
+    padding: 20px 20px;
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 20px 20px 0 0;
+    h1 {
+      margin: 0;
+    }
+  }
+  @media (max-width: 465px) {
+    width: -webkit-fill-available;
+  }
+  .total {
+    border-top: 2px solid $grey;
+    font-size: 15px;
+  }
+  button {
+    cursor: pointer;
+    z-index: 100;
+    background: $black;
+    color: $main-color-light;
+    border: 0;
+    padding: 20px 30px;
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out background, color;
+    width: fit-content;
+    font-size: 2rem;
+    &:hover {
+      background: $orange;
+      color: $black;
+    }
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    padding-top: 10px;
+    font-size: 13px;
+    .label {
+      font-size: 13px;
+    }
+    .total-price {
+      font-size: 15px;
+    }
+  }
+}

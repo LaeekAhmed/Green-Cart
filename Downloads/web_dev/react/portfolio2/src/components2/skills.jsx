@@ -20,7 +20,7 @@ const Skills = () => {
         className="justify-center py-20 flex flex-col w-full h-full skills"
       >
         {/* main block */}
-        <h1 className="text-5xl font-bold py-3 text-white px-8 head1">
+        <h1 className="text-4xl font-bold py-3 text-white px-8 head1">
           Skills;
         </h1>
         <div className="grid grid-cols-3 gap-6 p-10 text-center  text-white">

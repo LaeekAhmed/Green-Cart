@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Nunito;
+  src: url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Caveat;
+  src: url("../fonts/Caveat-Regular.ttf");
+}
+
+@font-face {
+  font-family: ImpactCustom;
+  src: url("../fonts/impact.ttf");
+}
+@import "./utilities/variables.scss";
+
+@import "./components/footer";
+@import "./components/Pill";
+@import "./components/caterors";
+@import "./components//UVP.scss";
+@import "./components/items";
+@import "./pages/PaymentDetails.scss";
+@import "../components/LogoSection/LogoSection.scss";
+@import "./pages/HomeScreen";
+@import "./pages/DoneScreen";
+
+html {
+  font-family: Nunito;
+  scroll-behavior: smooth;
+  font-size: 8px; // desktop
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-overflow-scrolling: touch;
+  @media (max-width: $breakpoint-tablet) {
+    font-size: 7px; // tablet
+  }
+  @media (max-width: $breakpoint-phone) {
+    font-size: 7px; // phone
+  }
+}
+@import "./components/faq";

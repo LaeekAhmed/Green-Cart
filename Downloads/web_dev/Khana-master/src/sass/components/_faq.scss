@@ -1,0 +1,103 @@
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  -webkit-text-stroke-width: thin;
+  border-radius: 20px;
+  overflow: hidden;
+  .button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color: $black-text;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 20px;
+    cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    box-shadow: $section-shadow;
+    .list {
+      height: auto;
+      max-height: 600px;
+      opacity: 1;
+      transition: 0.3s all;
+      li {
+        font-weight: 500;
+        color: $black-text;
+      }
+    }
+    ul {
+      list-style: none;
+    }
+
+    li::before {
+      content: "•";
+      color: $orange;
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em;
+    }
+    .hidden {
+      max-height: 0;
+      opacity: 0;
+      margin: 0;
+      z-index: -1;
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      gap: 4rem;
+      svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        min-width: 2.5rem;
+        min-height: 2.5rem;
+        color: $black-text;
+        padding: 5px;
+      }
+      p {
+        color: $black-text;
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+      .icon {
+        transition: 0.3s all;
+      }
+      .rotate {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+.Surrond {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.Question_Buttons {
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  max-width: 80vw;
+}
+
+// @media (max-width: 600px) {
+//   button {
+//     width: 100%; /* Make the buttons take up the full width of the screen on mobile */
+//     font-size: 8px; /* Increase the font size to make the buttons more easily readable on mobile */
+//   }
+//   ul {
+//     width: 100%; /* Make the dropdown menu take up the full width of the screen on mobile */
+//   }
+// }

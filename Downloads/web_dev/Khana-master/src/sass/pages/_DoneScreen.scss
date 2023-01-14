@@ -1,0 +1,44 @@
+.done-screen {
+  width: -webkit-fill-available;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+  justify-content: space-between;
+  max-height: 700px;
+
+  .check-mark {
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+  }
+  .delivery-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    h4 {
+      color: $black-text;
+      text-decoration: underline;
+      margin-bottom: 5px;
+    }
+  }
+  button {
+    cursor: pointer;
+    z-index: 200;
+    background: $orange;
+    color: $black-text;
+    border: 0;
+    padding: 20px 30px;
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out background, color;
+    &:hover {
+      background: $black;
+      color: $main-color-light;
+    }
+  }
+}
