@@ -23,7 +23,7 @@ function LogoSection() {
                 Create Grocery List <ArrowRight />
               </a>
             </div>
-            <img src="groceries.jpg" className="Food" alt="" />
+            <img src="cow.png" className="Food" alt="" />
           </div>
         </div>
         <div className="right_section">
