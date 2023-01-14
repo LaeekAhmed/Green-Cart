@@ -13,14 +13,14 @@ function LogoSection() {
               <div className="logo">
                 <img src="logo_icon1.png" className="LogoIcon" alt="" />
                 <div className="Name">
-                  Khana
+                  Green Cart
                   <br />
-                  <b>Meals your way!</b>
+                  <b>Keen to make you go green!</b>
                 </div>
               </div>
               <div className="Slogan"></div>
               <a className="Sidenote" href="#place-order">
-                Place Order <ArrowRight />
+                Create Grocery List <ArrowRight />
               </a>
             </div>
             <img src="food.png" className="Food" alt="" />
@@ -28,7 +28,7 @@ function LogoSection() {
         </div>
         <div className="right_section">
           <div className="top">
-            <p className="serving">Serving,</p>
+            <p className="serving">Orders shipped today:</p>
             <div className="In_KW_Merged">
               <div className="In">
                 100<i>%</i>
