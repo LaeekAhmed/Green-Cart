@@ -11,7 +11,7 @@ function LogoSection() {
           <div className="LogoColor">
             <div className="logo-text">
               <div className="logo">
-                <img src="logo_icon1.png" className="LogoIcon" alt="" />
+                <img src="green_cart.png" className="LogoIcon" alt="" />
                 <div className="Name">
                   Green Cart
                   <br />
@@ -23,7 +23,7 @@ function LogoSection() {
                 Create Grocery List <ArrowRight />
               </a>
             </div>
-            <img src="food.png" className="Food" alt="" />
+            <img src="groceries.jpg" className="Food" alt="" />
           </div>
         </div>
         <div className="right_section">
@@ -31,9 +31,9 @@ function LogoSection() {
             <p className="serving">Orders shipped today:</p>
             <div className="In_KW_Merged">
               <div className="In">
-                100<i>%</i>
+                100
               </div>
-              <p className="KW_area">in Kitchener / Waterloo Area!</p>
+              <p className="KW_area">in the GTA!</p>
             </div>
           </div>
           <div className="top bottom">
