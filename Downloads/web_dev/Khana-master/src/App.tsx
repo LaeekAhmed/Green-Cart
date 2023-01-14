@@ -8,6 +8,7 @@ import CheckoutForm from "./components/PaymentDetails";
 import Footer from "./components/Footer";
 import Sidebar from "./pages/HomeScreen/SideBar";
 import DoneScreen from "./pages/Done";
+import CommunityBlog from "./pages/CommunityBlog";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <HomeScreen />
         <CheckoutForm />
         <DoneScreen />
+        <CommunityBlog />
       </ReduxWrapper>
       <Footer />
     </div>

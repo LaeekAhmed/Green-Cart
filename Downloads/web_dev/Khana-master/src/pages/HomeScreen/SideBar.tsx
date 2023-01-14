@@ -1,4 +1,4 @@
-import { House, BagCheck, CheckCircle } from "react-bootstrap-icons";
+import { House, BagCheck, CheckCircle, ChatLeftDots } from "react-bootstrap-icons";
 import logo from "../../images/logo_icon.png";
 import SideIcon from "./SideIcon";
 import Dots from "./Dots";
@@ -11,10 +11,10 @@ const Sidebar = () => {
   return (
     <div className="side-bar">
       <img src={logo} className="logo-img" alt="Img of company icon" />
-      <SideIcon Icon={<House />} label={PAGE.HOME} hovered={true} />
+      <SideIcon Icon={<House />} label={PAGE.HOME} hovered={true}  />
       <Dots
         classN={
-          page === PAGE.CHECKOUT || page === PAGE.DONE
+          page === PAGE.CHECKOUT || page === PAGE.COMMUNITYBLOG
             ? "dots dots-colored"
             : "dots"
         }
@@ -23,7 +23,7 @@ const Sidebar = () => {
         Icon={<BagCheck size={"2rem"} />}
         label={PAGE.CHECKOUT}
         hovered={page !== PAGE.HOME}
-        disabled={true}
+        disabled={false}
       />
       <Dots classN={page === PAGE.DONE ? "dots dots-colored" : "dots"} />
 
@@ -31,7 +31,14 @@ const Sidebar = () => {
         Icon={<CheckCircle size={"2rem"} />}
         label={PAGE.DONE}
         hovered={page === PAGE.DONE}
-        disabled={true}
+        disabled={false}
+      />
+      <Dots classN={page === PAGE.COMMUNITYBLOG ? "dots dots-colored" : "dots"} />
+      <SideIcon
+        Icon={<ChatLeftDots size={"2rem"} />}
+        label={PAGE.COMMUNITYBLOG}
+        hovered={page === PAGE.COMMUNITYBLOG}
+        disabled={false}
       />
     </div>
   );
