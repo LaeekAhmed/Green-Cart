@@ -7,6 +7,15 @@ export type OptionType = {
     deliveryDate?: Date;
 };
 
+export type ProductOptions = {
+    id: number;
+    product_name: string;
+    price: string;
+    quantity: string;
+    farmer: string;
+    description: string;
+}[];
+
 export type CaterorOptions = { [arg: string]: OptionType[] };
 
 
