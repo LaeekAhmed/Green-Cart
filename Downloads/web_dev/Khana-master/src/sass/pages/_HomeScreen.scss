@@ -206,4 +206,9 @@ p {
   opacity: 0;
   z-index: -1;
   display: none !important;
+  width: 0px !important;
+}
+
+div.product{
+  width: 30em !important;
 }
