@@ -1,10 +1,13 @@
 import Caterors from "../../components/Caterors";
 import Footer from "../../components/Footer";
 import LogoSection from "../../components/LogoSection/intex";
+
 import UVPSection from "../../components/UVPSection";
 import Faq from "../../components/Faq";
 import Sidebar from "./SideBar";
 import CheckoutForm from "../../components/PaymentDetails";
+import Products from "../../components/Products/index";
+
 import { useSelector } from "react-redux";
 import { getAppFlow } from "../../redux/AppFlow/selectors";
 import { PAGE } from "../../redux/AppFlow/types";
@@ -34,6 +37,9 @@ const HomeScreen = () => {
             <div className="left">
               <Caterors />
             </div>
+          </div>
+          <div className="products">
+            <Products />
           </div>
 
           <Faq />

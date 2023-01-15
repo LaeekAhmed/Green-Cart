@@ -17,6 +17,9 @@ import { PayPalScriptOptions } from "@paypal/paypal-js/types/script-options";
 import { PayPalButtonsComponent } from "@paypal/paypal-js/types/components/buttons";
 
 
+
+
+
 function CheckoutForm() {
   const { page } = useSelector(getAppFlow);
   const dispatch = useDispatch();
