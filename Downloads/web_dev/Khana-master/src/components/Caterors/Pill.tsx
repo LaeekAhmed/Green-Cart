@@ -28,7 +28,7 @@ const Pill = ({
         <div className="info">
           <p className="header">{header}</p>
           <p className="sub-header">
-            Next Delivery: {deliveryDate.toDateString()}
+            Price : $ {price}
           </p>
         </div>
         <div className={isSel ? "caret caret-sel" : "caret"}>

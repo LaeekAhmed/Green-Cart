@@ -15,7 +15,19 @@ import Grid from "../Grid";
   Before Saturday: The default delivery
   On Saturday: The default delivery + week delay 
 */
-const Caterors = () => {
+
+const defaultList = [
+  {name: 'Eggs', price: 4.25, weight: 5, quantity: 4, inc_qty: false},
+  {name: 'Ground Chicken', price: 8.95, weight: 5, quantity: 4, inc_qty: false}
+]
+
+interface propType {
+  checkList: typeof defaultList,
+  netPrice: number
+  addItem: Function
+}
+
+const Caterors = (props : propType) => {
   const [sel, setSel] = useState<Number>(0);
   const [isWeekEnd, setIsWeekEnd] = useState<Boolean>(false);
   const { cartTotal } = useSelector(getCart);
@@ -45,47 +57,35 @@ const Caterors = () => {
     return date;
   };
 
-  return (
+return (
     <div className="caterors">
       <div className="grid" id="place-order">
         <h1>Place an Order: </h1>
       </div>
-      <Pill
-        isSel={sel === 1}
-        header="Faiza's Kitchen"
-        deliveryDate={addDays(nextDate(7), isWeekEnd ? 7 : 0)}
-        price="500"
-        imgSrc={faiza}
-        onClickCaret={() => setSelHeper(1)}
-        options={Options.Faiza}
-      />
-      <Pill
-        isSel={sel === 2}
-        header="Shafaq Babar"
-        deliveryDate={addDays(nextDate(7), isWeekEnd ? 10 : 3)}
-        price="500"
-        imgSrc={faiza}
-        onClickCaret={() => setSelHeper(2)}
-        options={Options.Auntie}
-      />
-      <Pill
-        isSel={sel === 3}
-        header="Meal Inn"
-        deliveryDate={nextDate(7)}
-        price="500"
-        imgSrc={faiza}
-        onClickCaret={() => setSelHeper(3)}
-        options={Options.Auntie2}
-      />
+      <div>
+      {props.checkList.map((item) => {
+          return <Pill
+          isSel={sel === 1}
+          header={item.name}
+          deliveryDate={addDays(nextDate(7), isWeekEnd ? 7 : 0)}
+          price={item.price.toString()}
+          imgSrc={faiza}
+          onClickCaret={() => setSelHeper(1)}
+          options={Options.Faiza}
+        />
+      })}
+
+      </div>
       <div className="total">
         <p className="total-price">Total</p>
-        <p className="total-price"> ${cartTotal}</p>
+        <p className="total-price"> ${props.netPrice}</p>
       </div>
       <button onClick={() => dispatch(APP_FLOW_ACTIONS.update(PAGE.CHECKOUT))}>
         Checkout <Check2 size={15} />
       </button>
     </div>
   );
+
 };
 
 export default Caterors;

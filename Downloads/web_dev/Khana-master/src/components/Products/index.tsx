@@ -13,10 +13,19 @@ import blackberry from "./blackberries.jpg"
 import corn from "./corn.jpg"
 import Item from "./Item";
 
+const defaultList = [
+    {name: 'Eggs', price: 4.25, weight: 5, quantity: 4, inc_qty: false},
+    {name: 'Ground Chicken', price: 8.95, weight: 5, quantity: 4, inc_qty: false}
+]
+  
+interface propType {
+checkList: typeof defaultList,
+addItem: Function
+}
 
-function Products() {
+function Products(props : propType) {
 
-    const prodList = [
+    const grocList = [
         {name: 'Eggs', price: 4.25, farmer: "bob", weight: 5, quantity: 4, img: eggs},
         {name: 'Ground Chicken', price: 8.95, farmer: "bob", weight: 5, quantity: 4, img: gchicken},
         {name: 'Chicken Breast', price: 3, farmer: "bob", weight: 5, quantity: 4, img: bchicken},
@@ -31,12 +40,14 @@ function Products() {
         <h1> Local Produce</h1>
         </div>
         <div className="products">
-            {prodList.map((prod) => 
+            {grocList.map((prod,idx) => 
                 <Item
                     // props ;
-                    name={prod.name} price={prod.price}
-                    farmer={prod.farmer} weight={prod.weight} quantity={prod.quantity} img={prod.img} >
-                </Item>)}
+                    key={idx} name={prod.name} price={prod.price}
+                    farmer={prod.farmer} weight={prod.weight} quantity={prod.quantity} img={prod.img}
+                    checkList={props.checkList} addItem={props.addItem} >
+                </Item>)
+            }
         </div>
 
     </div>

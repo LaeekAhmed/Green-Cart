@@ -14,30 +14,41 @@ import { Login } from "./components/login";
 
 function App() {
 
-  const [item, setItem] = useState<String>('beef');
-  const apiCall = (item : String) => {
-    const options = {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': 'e63110a651msh5e8eb31fb666ef8p1ff7a4jsn34d5d9fbd334',
-        'X-RapidAPI-Host': 'edamam-food-and-grocery-database.p.rapidapi.com'
-      }
-    };
-    const BASE_URL = `https://edamam-food-and-grocery-database.p.rapidapi.com`;
-    fetch(`${BASE_URL}/parser?ingr=${item}`, options)
-      .then(response => response.json())
-      .then(response => console.log(response.hints))
-      .catch(err => console.error(err));
-  }
+  const defaultList = [
+    {name: 'Eggs', price: 4.25, weight: 5, quantity: 4, inc_qty: false},
+    {name: 'Ground Chicken', price: 8.95, weight: 5, quantity: 4, inc_qty: false}
+  ]
 
-  apiCall("jam");
+  const [checkList,setCheckList] = useState<typeof defaultList>([])
+  let [netPrice, setnetPrice] = useState<number>(0);
+
+  const incQty = (idx : number) => {
+    let newList = [...checkList];
+    let newnet = netPrice;
+    newList[idx].quantity++;
+    newnet += newList[idx].price;
+    setCheckList(newList);
+    setnetPrice(newnet);
+    newList[idx].inc_qty = true;
+     
+  };
+
+  const addItem = (name : string, price : number, weight : number, quantity : number) => {
+    // creating a copy of productList ;
+    let newList = [...checkList];
+    newList.push({ price: Number(price), name: name, weight : 100, quantity : 1, inc_qty: false });
+    setnetPrice(netPrice+price)
+    setCheckList(newList);
+  };
+
+
 
   return (
     <div className="App">
       <ReduxWrapper>
         {/* <Login/> */}
         <Sidebar />
-        <HomeScreen />
+        <HomeScreen checkList={checkList} addItem={addItem} netPrice={netPrice}/>
         <CheckoutForm />
         <DoneScreen />
         <CommunityBlog />
