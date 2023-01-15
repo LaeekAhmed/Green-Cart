@@ -6,10 +6,10 @@ import tchicken from "./tchicken.jpg"
 import wchicken from "./wchicken.jpg"
 import potatoes from "./potatoes.jpg"
 import radish from "./radish.jpg"
-import rasp from "./raspberry.jpg"
-import straw from "./straw.jpg"
+import rasp from "./raspberries.jpg"
+import straw from "./strawberries.jpg"
 import leg from "./legumes.jpg"
-import blackberry from "./blackberry.jpg"
+import blackberry from "./blackberries.jpg"
 import corn from "./corn.jpg"
 
 
