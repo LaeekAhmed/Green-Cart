@@ -11,39 +11,39 @@ export const Options: ProductOptions = [
         price: "$4.99/dozen",
         quantity:"0",
         farmer:"Billy",
-        description:"eggs by the dozen",
+        description:"Organic large freerun eggs by the dozen",
 
     },
 
     {
         id:2,
         // product name
-        product_name: "",
-        price: "$4.99/dozen",
+        product_name: "ground chicken",
+        price: "$8.95/pound",
         quantity:"0",
-        farmer:"Billy",
-        description:"eggs by the dozen",
+        farmer:"Bob",
+        description:"boneless skinless ground chicken by the pound",
 
     },
 
     {
         id:3,
         // product name
-        product_name: "eggs",
-        price: "$4.99/dozen",
+        product_name: "chicken thighs",
+        price: "$5.40/pound",
         quantity:"0",
-        farmer:"Billy",
-        description:"eggs by the dozen",
+        farmer:"Amber",
+        description:"boneless skinless chicken thighs by the pound",
 
     },
 
     {
         id:4,
         // product name
-        product_name: "eggs",
-        price: "$4.99/dozen",
+        product_name: "whole chicken",
+        price: "$4.75/pound",
         quantity:"0",
-        farmer:"Billy",
+        farmer:"Amber",
         description:"eggs by the dozen",
 
     },
@@ -51,8 +51,8 @@ export const Options: ProductOptions = [
     {
         id:5,
         // product name
-        product_name: "eggs",
-        price: "$4.99/dozen",
+        product_name: "lettuce",
+        price: "$8/dozen",
         quantity:"0",
         farmer:"Billy",
         description:"eggs by the dozen",
