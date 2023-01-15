@@ -4,15 +4,15 @@ import { BarChart, Bar, XAxis, YAxis, Cell, Tooltip } from "recharts";
 
 interface DataPoint {
   name: string;
-  $: number;
+  E: number;
   color: string;
 }
 
 const data: DataPoint[] = [
-  { name: "Eating Out", $: 2300, color: "##000000" },
-  { name: "Meal Plan", $: 2000, color: "##000000" },
-  { name: "Groceries", $: 1100, color: "#000000" },
-  { name: "Khana", $: 960, color: "#FFD070" },
+  { name: "Eating Out", E: 2300, color: "##000000" },
+  { name: "Grocery Store", E: 1700, color: "##000000" },
+  { name: "Backyard Garden", E: 600, color: "#000000" },
+  { name: "Green Cart", E: 960, color: "#FFD070" },
 ];
 
 const Chart: React.FC = () => {
@@ -22,7 +22,7 @@ const Chart: React.FC = () => {
         width={600}
         height={300}
         data={data}
-        margin={{ top: 5, right: 20, left: 20, bottom: 60 }}
+        margin={{ top: 5, right: 20, left: 20, bottom: 70 }}
         style={{ margin: "0 auto" }}
       >
         <CartesianGrid strokeDasharray="0 0" stroke="#cbcbcb52" />
@@ -31,7 +31,7 @@ const Chart: React.FC = () => {
           axisLine={true}
           tickLine={false}
           label={{
-            value: "",
+            value: "E",
             position: "insideBottom",
             offset: -30,
             fill: "black",
@@ -49,7 +49,7 @@ const Chart: React.FC = () => {
         <YAxis
           axisLine={true}
           label={{
-            value: "$",
+            value: "E",
             position: "insideLeft",
             offset: -10,
             fontWeight: "bold",
@@ -66,9 +66,9 @@ const Chart: React.FC = () => {
           itemStyle={{ color: "#333" }}
         />
 
-        <Bar dataKey="$" barSize={40} radius={30}>
+        <Bar dataKey="E" barSize={40} radius={30}>
           {data.map((entry, index) => (
-            <Cell fill={entry.color} key={`cell-${index}`} />
+            <Cell fill={entry.color} key={`cell-E{index}`} />
           ))}
         </Bar>
       </BarChart>

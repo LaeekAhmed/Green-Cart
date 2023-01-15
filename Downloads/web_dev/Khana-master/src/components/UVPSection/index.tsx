@@ -6,8 +6,8 @@ const UVPSection = () => {
       <div className="flexIt">
         <div id="container">
           <h1>
-            Save over $1000 per term
-            <p>*Savings vary depending on caterer and portions</p>
+            CO2 Emissions per item
+            <p>*Emmitions vary depending on farmer and item</p>
           </h1>
           <Chart />
         </div>

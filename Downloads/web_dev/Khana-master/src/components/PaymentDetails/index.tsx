@@ -242,11 +242,12 @@ function CheckoutForm() {
               </label>
               <label>
                 <p>City:</p>
-                <select name="City" id="City" required>
-                  <option value="Waterloo">Waterloo</option>
-                  <option value="Kitchener">Kitchener</option>
-                  <option value="Cambridge">Cambridge</option>
-                </select>
+                <input
+                  name="City"
+                  type="text"
+                  placeholder="City"
+                  required
+                />
               </label>
               <label>
                 <p>Province:</p>

@@ -5,7 +5,7 @@ function Faq() {
     <div>
       <h1>
         Freqeuntly Asked Questions{" "}
-        <p>Learn more about Khana and our services</p>
+        <p>Learn more about Green Cart and our services</p>
       </h1>
       <div className="faq">
         <div className="Question_Buttons">
@@ -56,14 +56,14 @@ function Faq() {
               headerText="Who should I contact for issues with this service?"
               listChildren={
                 <>
-                  <li>You can contact khana through multiple mediums,</li>
+                  <li>You can contact Green Cart through multiple mediums,</li>
                   <li>
                     For urgent issues you can contact us through whatsapp, and
                     mobile
                   </li>
                   <li>
                     Otherwise we also handle more procedial issues through
-                    email, so email us at khana.limited@gmail.com.
+                    email, so email us at GreenCart.limited@gmail.com.
                   </li>
                 </>
               }
@@ -80,7 +80,7 @@ function Faq() {
                     needs are met
                   </li>
                   <li>
-                    For us at Khana, customer experience is the most vital part
+                    For us at Green Cart, customer experience is the most vital part
                     of our team.
                   </li>
                 </>

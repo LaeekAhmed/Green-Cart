@@ -58,11 +58,9 @@ const HomeScreen = (props : propType) => {
             </div> */}
           </div>
           <Faq />
-          <a href="https://wa.me/message/RH6IWVGO4FX6L1">
             <div className="whatsapp">
               <Whatsapp />
             </div>
-          </a>
         </div>
       </div>
     </div>

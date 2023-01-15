@@ -31,17 +31,17 @@ function LogoSection() {
             <p className="serving">Orders shipped today:</p>
             <div className="In_KW_Merged">
               <div className="In">
-                100
+                107
               </div>
-              <p className="KW_area">in the GTA!</p>
+              <p className="KW_area">in the GTHA!</p>
             </div>
           </div>
           <div className="top bottom">
-            <p className="serving">Including,</p>
+            <p className="serving">Guranteed,</p>
 
             <div className="In_KW_Merged">
-              <div className="In">4</div>
-              <p className="KW_area">Exceptional Halal / Veg Options</p>
+              <div className="In">NO</div>
+              <p className="KW_area">Preservatives, Dyes, or Chemicals</p>
             </div>
           </div>
         </div>
