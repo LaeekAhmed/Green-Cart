@@ -1,9 +1,52 @@
-h1{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #000;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.community-blog{
+    width: -webkit-fill-available;
+    text-align: left;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.heading{
+    font-family: 'Open Sans', sans-serif;
+    /* other styles */
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 2;
+    width: 40em;
+    font-size: 4.2rem;
+
+}
+.relative-position {
+    font-family: 'Open Sans', sans-serif;
+    /* other styles */
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8;
+    width: 40em;
+    font-size: 2.1rem;
+    margin-left: 115px;
+}
+
+#crops{
+    float: left;
+}
+
+.image-scale-half {
+    transform: scale(0.8);
+}
+
+.image-scale-double {
+    transform: scale(0.7);
+}
+
+p{
     margin-bottom: 1rem;
-    text-align: center;
-    margin-top: 1rem;
-    
+}
+.resize_fit_center {
+    vertical-align: middle;
 }
