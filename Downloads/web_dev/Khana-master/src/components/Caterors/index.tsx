@@ -62,6 +62,14 @@ return (
       <div className="grid" id="place-order">
         <h1>Place an Order: </h1>
       </div>
+      <form>
+        <input
+          type="text"
+          value= ""
+          onChange= {() => {}}
+          placeholder="Search for an item..."
+        />
+      </form>
       <div>
       {props.checkList.map((item) => {
           return <Pill
@@ -69,7 +77,6 @@ return (
           header={item.name}
           deliveryDate={addDays(nextDate(7), isWeekEnd ? 7 : 0)}
           price={item.price.toString()}
-          imgSrc={faiza}
           onClickCaret={() => setSelHeper(1)}
           options={Options.Faiza}
         />

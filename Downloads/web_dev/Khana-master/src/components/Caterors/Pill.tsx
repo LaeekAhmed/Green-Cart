@@ -7,7 +7,6 @@ type Props = {
   header: string;
   deliveryDate: Date;
   price: string;
-  imgSrc: any;
   onClickCaret: (arg?: Number) => void;
   options: OptionType[];
 };
@@ -17,14 +16,12 @@ const Pill = ({
   header,
   deliveryDate,
   price,
-  imgSrc,
   onClickCaret,
   options,
 }: Props) => {
   return (
     <div className="food-pill">
       <div className="top" onClick={() => onClickCaret(isSel ? 0 : undefined)}>
-        <img src={imgSrc} alt="" className="pic" />
         <div className="info">
           <p className="header">{header}</p>
           <p className="sub-header">

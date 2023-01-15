@@ -73,6 +73,10 @@ const Item : React.FC<UserProps> = ({name, price, farmer, weight, quantity, img,
       setInfo(result)
     });
   }, [name]);
+
+
+
+
     
 
   return (

@@ -31,7 +31,10 @@ function Products(props : propType) {
         {name: 'Chicken Breast', price: 3, farmer: "bob", weight: 5, quantity: 4, img: bchicken},
         {name: 'Potatoes', price: 4, farmer: "bob", weight: 5, quantity: 4, img: potatoes},
         {name: 'Corn', price: 4, farmer: "bob", weight: 5, quantity: 4, img: corn},
-        {name: 'blackberry', price: 4, farmer: "bob", weight: 5, quantity: 4, img: blackberry}
+        {name: 'blackberry', price: 4, farmer: "bob", weight: 5, quantity: 4, img: blackberry},
+        {name: 'raspberries', price: 4, farmer: "bob", weight: 5, quantity: 4, img: rasp},
+        {name: 'strawberries', price: 4, farmer: "bob", weight: 5, quantity: 4, img: straw},    
+
         ]
 
   return (
@@ -40,6 +43,7 @@ function Products(props : propType) {
         <h1> Local Produce</h1>
         </div>
         <div className="products">
+            
             {grocList.map((prod,idx) => 
                 <Item
                     // props ;

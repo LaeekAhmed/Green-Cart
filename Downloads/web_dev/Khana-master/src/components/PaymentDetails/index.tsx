@@ -13,6 +13,7 @@ import {
   PayPalButtons,
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
+
 import { PayPalScriptOptions } from "@paypal/paypal-js/types/script-options";
 import { PayPalButtonsComponent } from "@paypal/paypal-js/types/components/buttons";
 
